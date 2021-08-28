@@ -53,7 +53,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
         /*
     >>Source Code provided by
-    >>Jubayer Hossain [https://www.linkedin.com/in/shahiduldeowan/]
+    >>Shahidul Deowan [https://www.linkedin.com/in/shahiduldeowan/]
     >>Your positive words help me doing even better
      */
 
@@ -138,15 +138,9 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         hashMap.put("vdo_desciption", "Anti-tank mines and Anti-personnel mines ");
         arrayList.add(hashMap);
         //-------------
-
-
-
     }
 
     //=======================================================
-    //====================================================================
-    //====================================================================
-
     TextView tvDate;
     LinearLayout layoutContainer;
     FloatingActionButton fabButton;
@@ -284,14 +278,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
             }
         });
 
-
-
-
-
     } // End of onCreate Bundle
-
-
-
 
 
     private void makeListView(){
@@ -322,13 +309,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     }
 
     ///==============================================
-    ///==============================================
-
-
-
-    ///==============================================
-    ///==============================================
-
 
     private void loadBannerAd(){
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -344,10 +324,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
     }
     ///==============================================
-    ///==============================================
 
-
-    //==============================================
     private void showInterstitial() {
         // Show the ad if it's ready.
         if (mInterstitialAd != null ) {
@@ -396,12 +373,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
                     }
 
-
-
-
-
                 }); // FullScreen Callback Ends here
-
 
             }
 
@@ -411,34 +383,11 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
                 mInterstitialAd = null;
             }
 
-
-
-
-
         });
 
     }
 
-    // loadFullscreenAd method ENDS  here..... >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-    ///==============================================
-    ///==============================================
-
-
-    ///==============================================
-    ///==============================================
-
-
-
-
-
-
-
-
-
-
-    ///==============================================
+    // loadFullscreenAd method ENDS  here.....
     ///==============================================
 
 
@@ -511,20 +460,12 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
                         showInterstitial();
                     }
 
-
-
-
-
                 }
             });
-
-
-
 
             return convertView;
         }
     }
-
 
 
     //================================================
@@ -546,12 +487,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         layPlayer.setVisibility(View.GONE);
         layPlayer.clearAnimation();
     }
-
-
-
-
-
-
 
     //==============================================
     private final class MyPlaybackEventListener implements YouTubePlayer.PlaybackEventListener {
@@ -599,13 +534,7 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
     }
 
-    //*******************************************************************
-
-
-
     //=================================================================
-
-
 
 
     private final class MyPlayerStateChangeListener implements YouTubePlayer.PlayerStateChangeListener {
@@ -630,8 +559,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
              */
 
-
-
         }
 
         public void onLoaded(String arg0) {
@@ -655,9 +582,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         }
 
     }
-    //==============================================================
-
-
 
 //=================================================
     private void playNextVideo(){
@@ -683,13 +607,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
 
     }
 
-
-
-
-
-
-    ///==============================================
-    ///==============================================
     //===================================================
 
     public static void setListViewHeightBasedOnChildren(ListView listView) {
@@ -716,11 +633,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     }
 
     //==========================================================================
-//==========================================================================
-
-
-
-
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
@@ -733,8 +645,6 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
         myYoutubePlayer = null;
     }
-
-
 
 
     ///====================================================
@@ -780,6 +690,4 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         super.onDestroy();
     }
 
-
-    ///==============================================
 }
